@@ -1,12 +1,12 @@
 # Tipos de datos Java
 
-# Enteros:
+## Enteros:
 Estos tipos de datos nos permiten trabajar con números enteros ya sean positivos o negativos: Byte, short, int, long.
-# Decimales: 
+## Decimales: 
 Estos tipos de datos nos permiten trabajar con números los cuales posean punto decimal ya sean positivos o negativos: float, double.
-# Caracteres: 
+## Caracteres: 
 Este tipo de datos nos permitirá trabajar con caracteres:char.
-# Booleanos:
+## Booleanos:
 Este tipo de datos nos permitirá trabajar con valores lógicos, verdadero o falso: boolean.
 
 # CÓDIGO ASCII: 
