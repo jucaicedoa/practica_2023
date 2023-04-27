@@ -28,3 +28,16 @@ class -|- finally -|- long -|- strictfp -|- volatile
 true -|- false -|- null.
 
 # Métodos print y println
+
+1. Con el método println el mensaje se imprimirá en consola con un salto de línea.
+1. con el método print imprimirá el mensaje en la misma línea.
+
+# Secuencias de escape 
+
+Lassecuencias de escape en Java nos permiten dar formato a las cadenas de texto con las que nos encontramos trabajando.
+
+* **\n**. Salto de línea.
+* **\t.** Tabulador.
+* **\\.** Diagonal inversa.
+* **\".** Comillas dobles.
+* **\'.** Comillas simples.
