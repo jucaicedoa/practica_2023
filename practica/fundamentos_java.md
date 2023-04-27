@@ -39,5 +39,5 @@ Lassecuencias de escape en Java nos permiten dar formato a las cadenas de texto 
 * Salto de línea: (**\n**)
 * Tabulador: (**\t**)
 * Diagonal inversa:(**\\**)
-* Comillas dobles: (\")
-* Comillas simples: (\')
+* Comillas dobles: (\\")
+* Comillas simples: (\\')
