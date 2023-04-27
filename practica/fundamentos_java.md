@@ -1,20 +1,20 @@
-# Tipos de datos Java
+# TEORÍA JAVA
+## Tipos de datos Java
 
-## Enteros:
+### Enteros:
 Estos tipos de datos nos permiten trabajar con números enteros ya sean positivos o negativos: Byte, short, int, long.
-## Decimales: 
+### Decimales: 
 Estos tipos de datos nos permiten trabajar con números los cuales posean punto decimal ya sean positivos o negativos: float, double.
-## Caracteres: 
+### Caracteres: 
 Este tipo de datos nos permitirá trabajar con caracteres:char.
-## Booleanos:
+### Booleanos:
 Este tipo de datos nos permitirá trabajar con valores lógicos, verdadero o falso: boolean.
 
-# CÓDIGO ASCII: 
+## CÓDIGO ASCII: 
 
 https://elcodigoascii.com.ar 
 
-# Palabras Reservadas Java
-
+## Palabras Reservadas Java
 
 abstract | continue | for        |  new      | switch       |
 assert   | default  |(goto)      | package   | synchronized |
@@ -26,14 +26,13 @@ catch    | extends  | int        | short     | try          |
 char     | final    | interface  | static    | void         |
 class    | finally  | long       | strictfp  | volatile     |
 (const)  | float    | native     | super     | while        |
-true     | false    | null.      |
-
-# Métodos print y println
+true     | false    | null       |
+## Métodos print y println
 
 1. Con el método println el mensaje se imprimirá en consola con un salto de línea.
 1. con el método print imprimirá el mensaje en la misma línea.
 
-# Secuencias de escape 
+## Secuencias de escape 
 
 Las secuencias de escape en Java nos permiten dar formato a las cadenas de texto con las que nos encontramos trabajando.
 
