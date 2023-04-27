@@ -15,6 +15,12 @@ https://elcodigoascii.com.ar
 
 # Palabras Reservadas Java
 
+
+|--- |--- |--- |
+| row 1 | column 2 | column 3 |
+| row 2 | row 2 column 2 | row 2 column 3 |
+
+
 abstract -|- continue -|- for -|-new -|- switch
 assert -|- default -|- (goto) -|-	package -|-	synchronized
 boolean -|-	do -|- if -|- private -|- this
