@@ -41,3 +41,8 @@ Las secuencias de escape en Java nos permiten dar formato a las cadenas de texto
 * Diagonal inversa:(**\\**)
 * Comillas dobles: (**\\"**)
 * Comillas simples: (**\\'**)
+
+## Operadores
+https://twitter.com/coda_col/status/1553868596392198144/photo/1 
+
+## Casting
