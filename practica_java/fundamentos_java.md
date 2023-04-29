@@ -46,3 +46,16 @@ Las secuencias de escape en Java nos permiten dar formato a las cadenas de texto
 https://twitter.com/coda_col/status/1553868596392198144/photo/1 
 
 ## Casting
+
+casting.java
+
+## Operador ternario
+
+operator_t.java
+
+## String 
+No es un tipo primitivo, es un clase. Utilizan ("")
+
+string.java
+
+### Métodos aplicados a String

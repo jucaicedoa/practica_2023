@@ -5,5 +5,4 @@ public class casting{
         int resultado = variable1+ (int)variable2 ; 
         System.out.println(resultado);
     }
-
 }
