@@ -54,8 +54,11 @@ casting.java
 operator_t.java
 
 ## String 
+
 No es un tipo primitivo, es un clase. Utilizan ("")
 
 string.java
 
 ### Métodos aplicados a String
+
+metodos_stri.java
