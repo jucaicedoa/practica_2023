@@ -47,18 +47,23 @@ https://twitter.com/coda_col/status/1553868596392198144/photo/1
 
 ## Casting
 
-casting.java
+Ejemplo en **casting.java**
 
 ## Operador ternario
 
-operator_t.java
+Ejemplo en **operator_t.java**
 
 ## String 
 
 No es un tipo primitivo, es un clase. Utilizan ("")
 
-string.java
+Ejemplo en **string.java**
 
 ### Métodos aplicados a String
 
-metodos_stri.java
+Ejemplos en **metodos_stri.java**
+
+## Condicionales 
+
+Ejemplos en **condicionales.java**
+Es permitido anidar condicionales.
