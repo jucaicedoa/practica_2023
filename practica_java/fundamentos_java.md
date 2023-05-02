@@ -3,22 +3,22 @@
 
 ### Enteros:
 Estos tipos de datos nos permiten trabajar con números enteros ya sean positivos o negativos: Byte, short, int, long.
-### Decimales: 
+### Decimales:
 Estos tipos de datos nos permiten trabajar con números los cuales posean punto decimal ya sean positivos o negativos: float, double.
-### Caracteres: 
+### Caracteres:
 Este tipo de datos nos permitirá trabajar con caracteres:char.
 ### Booleanos:
 Este tipo de datos nos permitirá trabajar con valores lógicos, verdadero o falso: boolean.
 
-## CÓDIGO ASCII: 
+## CÓDIGO ASCII:
 
-https://elcodigoascii.com.ar 
+https://elcodigoascii.com.ar
 
 ## Palabras Reservadas Java
 
 abstract | continue | for        |  new      | switch       |
 assert   | default  |(goto)      | package   | synchronized |
-boolean  |	do      | if         | private   | this         |
+boolean  |  do      | if         | private   | this         |
 break    | double   | implements | protected | throw        |
 byte     | else     | import     | public    | thows        |
 case     | enum     | instanceof | return    | transient    |
@@ -32,7 +32,7 @@ true     | false    | null       |
 1. Con el método println el mensaje se imprimirá en consola con un salto de línea.
 1. con el método print imprimirá el mensaje en la misma línea.
 
-## Secuencias de escape 
+## Secuencias de escape
 
 Las secuencias de escape en Java nos permiten dar formato a las cadenas de texto con las que nos encontramos trabajando.
 
@@ -43,7 +43,7 @@ Las secuencias de escape en Java nos permiten dar formato a las cadenas de texto
 * Comillas simples: (**\\'**)
 
 ## Operadores
-https://twitter.com/coda_col/status/1553868596392198144/photo/1 
+https://twitter.com/coda_col/status/1553868596392198144/photo/1
 
 ## Casting
 
@@ -53,7 +53,7 @@ Ejemplo en **casting.java**
 
 Ejemplo en **operator_t.java**
 
-## String 
+## String
 
 No es un tipo primitivo, es un clase. Utilizan ("")
 
@@ -63,7 +63,7 @@ Ejemplo en **string.java**
 
 Ejemplos en **metodos_stri.java**
 
-## Condicionales 
+## Condicionales
 
 Ejemplos en **condicionales.java**
 Es permitido anidar condicionales.
