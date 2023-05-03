@@ -25,9 +25,10 @@ public class ciclos {
         
         System.out.println("El numero tiene " + contado + " digitos");
     
-        // for
-
-
+        // for (condición inicial; condición final; incremento)
+        for (int i = 0; i < 8; i++) {
+            System.out.println("Iteración número" + i);
+        }
     
     }
 }
