@@ -1,6 +1,7 @@
 public class condicionales {
     public static void main(String[] args) {
         String ejemplo = "Suspendido";
+
         if (ejemplo.equals("Encendido")) {
             System.out.println("El equipo está encendido, puede correr cualquier programa");
         } else if (ejemplo.equals("Suspendido")) {
@@ -24,7 +25,6 @@ public class condicionales {
                 break;
             default:
                 System.out.println("Caso no válido");
-
         }
         // Solo se rompe el caso hasta en contrar un break.
         int mes = 3;
