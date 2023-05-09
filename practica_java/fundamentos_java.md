@@ -78,3 +78,17 @@ Es permitido anidar ciclos.
 Longitud es inmutable y manejan datos del mismo tipo que están etiquetados con un índice propio en el arreglo. En Java inician en el índice 0.
 
 Ejemplos en **arreglos.java**
+
+## Métodos sobre cadenas 
+
+Ejemplos en **metodos_cadenas.java**
+
+## POO 
+
+### Clases y objetos 
+
+Clase --> Molde que llega a ser lo más abstracto posible.
+Objeto --> Tipo de dato que surge de la clase (instancia).
+Atributos --> Características propias e identificables.
+Métodos --> Acciones del objeto.
+Ejemplos en **gato.java** y **mainGato.java** 
