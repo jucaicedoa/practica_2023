@@ -87,8 +87,23 @@ Ejemplos en **metodos_cadenas.java**
 
 ### Clases y objetos 
 
-Clase --> Molde que llega a ser lo más abstracto posible.
-Objeto --> Tipo de dato que surge de la clase (instancia).
-Atributos --> Características propias e identificables.
-Métodos --> Acciones del objeto.
+**Clase** --> Molde que llega a ser lo más abstracto posible.
+
+**Objeto** --> Tipo de dato que surge de la clase (instancia).
+
+**Atributos** --> Características propias e identificables.
+
+**this** --> Acceder a los atributos
+
+**Constructor** --> Se ejecuta siempre que se instancia un objeto
+
+**Métodos** --> Acciones del objeto.
+
+**Getter** --> Retorna el valor de un atributo
+**Setters** -->  Establece un valor a un atributo
+
+**Modificadores de acceso métodos y atributos** --> default(acceso del mismo paquete), public(acceso desde cualquier paquete), private(solo se tendrá acceso desde la misma clase), protected 
+
+Dichos modificadores se situan antes de definir el tipo de la variable o método
+
 Ejemplos en **gato.java** y **mainGato.java** 
