@@ -110,7 +110,7 @@ Ejemplos en **gato.java** y **mainGato.java**
 
 **Sobre carga de métodos y constructores** --> Se pueden utilizar diferentes métodos o constructores con el mismo nombre pero con diferente tipo o cantidad de parámetros para así obtener diferentes comportamientos, siendo esto la sobrecarga de métodos o constructores.
 
-Ejemplos en **sobreCargaOpera.java** y **mainSobreCarga.java** (Se utiliza de forma similar para constructores)
+Ejemplos en **sobreCargaOpera.java** y **mainSobreCarga.java** (Se utiliza de forma similar para constructores).
 
 **static** -->Se le asigna a una variable la cual se puede acceder sin instanciar el objeto al que pertenece. Al utilizarlo es importante utilizar nombredeClase.nombreVariable (se convierte en una variable de clase mientras que las demás serán variables de instancia).
 
@@ -119,3 +119,7 @@ Ejemplos en **sobreCargaOpera.java** y **mainSobreCarga.java** (Se utiliza de fo
 **clases anidadas**  --> Una clase que está en otra clase.
 
 Ejemplos en **usuario.java** y **mainClasesAnidadas.java**
+
+**Herencia** --> Algunas clases pueden poseer casi la misma cantidad de código por lo que la mejor manera de no tener código duplicado es generalizarlo y heredar clases. Tenemos clase padre y clases hijas; las clases se vuelven más abtrasctas cada vez que ascendamos y más complejas cada vez que descendamos.
+
+Ejemplos en **mascota.java**, **perro.java**, **conejo.java** y **mainHerencia.java**
