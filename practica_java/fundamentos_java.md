@@ -51,17 +51,17 @@ Ejemplo en **casting.java**
 
 ## Operador ternario
 
-Ejemplo en **operator_t.java**
+Ejemplo en **operatorT.java**
 
 ## String
 
-No es un tipo primitivo, es un clase. Utilizan ("")
+No es un tipo primitivo, es un clase. Utilizan ("").
 
 Ejemplo en **string.java**
 
 ### Métodos aplicados a String
 
-Ejemplos en **metodos_stri.java**
+Ejemplos en **metodosStri.java**
 
 ## Condicionales
 
@@ -81,7 +81,7 @@ Ejemplos en **arreglos.java**
 
 ## Métodos sobre cadenas 
 
-Ejemplos en **metodos_cadenas.java**
+Ejemplos en **metodosCadenas.java**
 
 ## POO 
 
@@ -93,17 +93,29 @@ Ejemplos en **metodos_cadenas.java**
 
 **Atributos** --> Características propias e identificables.
 
-**this** --> Acceder a los atributos
+**this** --> Acceder a los atributos.
 
-**Constructor** --> Se ejecuta siempre que se instancia un objeto
+**Constructor** --> Se ejecuta siempre que se instancia un objeto.
 
 **Métodos** --> Acciones del objeto.
 
-**Getter** --> Retorna el valor de un atributo
-**Setters** -->  Establece un valor a un atributo
+**Getter** --> Retorna el valor de un atributo.
+**Setters** -->  Establece un valor a un atributo.
 
-**Modificadores de acceso métodos y atributos** --> default(acceso del mismo paquete), public(acceso desde cualquier paquete), private(solo se tendrá acceso desde la misma clase), protected 
+**Modificadores de acceso métodos y atributos** --> default(acceso del mismo paquete), public(acceso desde cualquier paquete), private(solo se tendrá acceso desde la misma clase), protected. 
 
-Dichos modificadores se situan antes de definir el tipo de la variable o método
+Dichos modificadores se situan antes de definir el tipo de la variable o método.
 
 Ejemplos en **gato.java** y **mainGato.java** 
+
+**Sobre carga de métodos y constructores** --> Se pueden utilizar diferentes métodos o constructores con el mismo nombre pero con diferente tipo o cantidad de parámetros para así obtener diferentes comportamientos, siendo esto la sobrecarga de métodos o constructores.
+
+Ejemplos en **sobreCargaOpera.java** y **mainSobreCarga.java** (Se utiliza de forma similar para constructores)
+
+**static** -->Se le asigna a una variable la cual se puede acceder sin instanciar el objeto al que pertenece. Al utilizarlo es importante utilizar nombredeClase.nombreVariable (se convierte en una variable de clase mientras que las demás serán variables de instancia).
+
+**final** --> Se le asigna a una variable cuyo valor no cambia.
+
+**clases anidadas**  --> Una clase que está en otra clase.
+
+Ejemplos en **usuario.java** y **mainClasesAnidadas.java**
