@@ -1,4 +1,4 @@
-class metodos_stri {
+class metodosStri {
     public static void main(String[] args) {
         String mensaje = "Soy un String";
         // Tamaño

@@ -1,4 +1,4 @@
-public class metodos_cadenas {
+public class metodosCadenas {
     public static void main(String[] args) {
 
         String cadena = "Repositorio jucaicedoa"; // Un String está compuesto por elementos de tipo char los cuales tienen una posición en el String que inicia en 0
