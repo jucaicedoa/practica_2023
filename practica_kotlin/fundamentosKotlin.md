@@ -12,7 +12,7 @@ https://kotlinlang.org
 val = Cuando son instanciados o referenciados su valor no puede cambiar
 var = Cuando son instanciados o referenciados su valor puede cambiar
 
-'''
+```
 fun main(){
  //Int
  val age:Int = 30
@@ -47,5 +47,5 @@ fun main(){
  println(strinmodificar)
 
 }
-'''
+```
 
