@@ -174,3 +174,13 @@ No se puede instanciar, posee al menos un método abstracto. La clase define lo 
 Una clase hija puede ser tratada como una clase padre. Se puede necesitar un arreglo que contenga diferentes objetos; dado que hacer un arreglo para cada objeto es poco recomendado se podría utilizar el principio de sustitución (si todos los objetos son hijos del mismo padre) reemplazando solo en la parte izquierda de la declaración e instanciación del objeto el tipo del objeto actual por el de su padre sin dejar de instanciar al objeto actual en la derecha. 
 
 **Interfaces**
+
+Una interfaz puede ser una colección de métodos abstractos y colección de constantes, dice qué hace pero no cómo. Una clase puede implementar la n cantidades que necesite a diferencia de la herencia. Es posible realizar herencia solamente entre interfaces. Las clases son las únicas que pueden implementar interfaces. Cabe resaltar que en las interfaces existen los métodos default cuyo objetivo si es definir un comportamiento y las clases de instancia pueden acceder a él.
+
+Ejemplos en **canino.java**, **perrito.java** y **mainInterfaces.java**
+
+**API DE JAVA**
+
+Biblioteca de clases ya definidas.
+
+https://docs.oracle.com/javase/8/docs/api/ 
