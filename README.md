@@ -1,5 +1,8 @@
 # Práctica 2023
+
 Agrego temática lenguajes y proyectos de práctica del año 2023.
+
+![GitHub last commit](https://img.shields.io/github/last-commit/jucaicedoa/practica_2023?style=plastic)
 
 ## Carpeta practica_java
 
