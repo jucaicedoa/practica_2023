@@ -16,6 +16,8 @@ https://elcodigoascii.com.ar
 
 ## Palabras Reservadas Java
 
+|1|2|3|4|5|
+|--|--|--|--|--|
 abstract | continue | for        |  new      | switch       |
 assert   | default  |(goto)      | package   | synchronized |
 boolean  |  do      | if         | private   | this         |
@@ -26,7 +28,7 @@ catch    | extends  | int        | short     | try          |
 char     | final    | interface  | static    | void         |
 class    | finally  | long       | strictfp  | volatile     |
 (const)  | float    | native     | super     | while        |
-true     | false    | null       |
+true     | false    | null       |           |              |
 ## Métodos print y println
 
 1. Con el método println el mensaje se imprimirá en consola con un salto de línea.
