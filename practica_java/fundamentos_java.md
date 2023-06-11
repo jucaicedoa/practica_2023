@@ -125,7 +125,7 @@ Establece un valor a un atributo.
 
 **Modificadores de acceso métodos y atributos**
 
-default(acceso del mismo paquete), public(acceso desde cualquier paquete), private(solo se tendrá acceso desde la misma clase), protected. 
+default(acceso del mismo paquete), public(acceso desde cualquier paquete), private(solo se tendrá acceso desde la misma clase), protected(acceso del mismo paquete y no en diferentes). 
 
 Dichos modificadores se situan antes de definir el tipo de la variable o método.
 
