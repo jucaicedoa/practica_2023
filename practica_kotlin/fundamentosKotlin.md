@@ -1,6 +1,6 @@
 # TEORÍA KOTLIN
 
-Teoría básica de repaso del lenguaje. Se realiza en Android Studio por lo que se anexan los códigos
+Teoría básica de repaso del lenguaje. Se realiza en Android Studio por lo que se insertan los códigos
 https://linktr.ee/jucaicedoa
 
 ## DOCUMENTACIÓN 
@@ -12,8 +12,10 @@ https://kotlinlang.org
 val = Cuando son instanciados o referenciados su valor no puede cambiar
 var = Cuando son instanciados o referenciados su valor puede cambiar
 
-```
+```kotlin:
 fun main(){
+
+ //Valores
  //Int
  val age:Int = 30
  //Float
@@ -34,6 +36,7 @@ fun main(){
  println(string1)
  println(boolean1)
 
+ //Variables
  var age1:Int = 30
  println("valor sin modificar " + age1)
  age1 = 23
@@ -48,4 +51,4 @@ fun main(){
 
 }
 ```
-
+## FUNCIONES
