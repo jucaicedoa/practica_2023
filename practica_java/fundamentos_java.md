@@ -1,4 +1,7 @@
 # TEORÍA JAVA
+
+Teoría básica de repaso del lenguaje, la mayoría con código ejemplo. 
+https://linktr.ee/jucaicedoa
 ## Tipos de datos Java
 
 ### Enteros:
@@ -89,47 +92,67 @@ Ejemplos en **metodosCadenas.java**
 
 ### Clases y objetos 
 
-**Clase** --> Molde que llega a ser lo más abstracto posible.
+**Clase**
+Molde que llega a ser lo más abstracto posible.
 
-**Objeto** --> Tipo de dato que surge de la clase (instancia).
+**Objeto**
+Tipo de dato que surge de la clase (instancia).
 
-**Atributos** --> Características propias e identificables.
+**Atributos**
+Características propias e identificables.
 
-**this** --> Acceder a los atributos.
+**this**
+Acceder a los atributos.
 
-**Constructor** --> Se ejecuta siempre que se instancia un objeto.
+**Constructor**
+Se ejecuta siempre que se instancia un objeto.
 
-**Métodos** --> Acciones del objeto.
+**Métodos**
+Acciones del objeto.
 
-**Getter** --> Retorna el valor de un atributo.
-**Setters** -->  Establece un valor a un atributo.
+**Getter**
+Retorna el valor de un atributo.
+**Setters**
+Establece un valor a un atributo.
 
-**Modificadores de acceso métodos y atributos** --> default(acceso del mismo paquete), public(acceso desde cualquier paquete), private(solo se tendrá acceso desde la misma clase), protected. 
+**Modificadores de acceso métodos y atributos**
+default(acceso del mismo paquete), public(acceso desde cualquier paquete), private(solo se tendrá acceso desde la misma clase), protected. 
 
 Dichos modificadores se situan antes de definir el tipo de la variable o método.
 
 Ejemplos en **gato.java** y **mainGato.java** 
 
-**Sobre carga de métodos y constructores** --> Se pueden utilizar diferentes métodos o constructores con el mismo nombre pero con diferente tipo o cantidad de parámetros para así obtener diferentes comportamientos, siendo esto la sobrecarga de métodos o constructores.
+**Sobre carga de métodos y constructores**
+Se pueden utilizar diferentes métodos o constructores con el mismo nombre pero con diferente tipo o cantidad de parámetros para así obtener diferentes comportamientos, siendo esto la sobrecarga de métodos o constructores.
 
 Ejemplos en **sobreCargaOpera.java** y **mainSobreCarga.java** (Se utiliza de forma similar para constructores).
 
-**static** -->Se le asigna a una variable la cual se puede acceder sin instanciar el objeto al que pertenece. Al utilizarlo es importante utilizar nombredeClase.nombreVariable (se convierte en una variable de clase mientras que las demás serán variables de instancia).
+**static**
+Se le asigna a una variable la cual se puede acceder sin instanciar el objeto al que pertenece. Al utilizarlo es importante utilizar nombredeClase.nombreVariable (se convierte en una variable de clase mientras que las demás serán variables de instancia).
 
-**final** --> Se le asigna a una variable cuyo valor no cambia.
+**final**
+Se le asigna a una variable cuyo valor no cambia.
 
-**clases anidadas**  --> Una clase que está en otra clase.
+**clases anidadas**
+Una clase que está en otra clase.
 
 Ejemplos en **usuario.java** y **mainClasesAnidadas.java**
 
-**super** --> Nos permite utilizar métodos de una clase padre.
+**super**
+Nos permite utilizar métodos de una clase padre.
 
-**Herencia** --> Algunas clases pueden poseer casi la misma cantidad de código por lo que la mejor manera de no tener código duplicado es generalizarlo y heredar clases. Tenemos clase padre y clases hijas; las clases se vuelven más abtrasctas cada vez que ascendamos y más complejas cada vez que descendamos.
+**Herencia**
+Algunas clases pueden poseer casi la misma cantidad de código por lo que la mejor manera de no tener código duplicado es generalizarlo y heredar clases. Tenemos clase padre y clases hijas; las clases se vuelven más abtrasctas cada vez que ascendamos y más complejas cada vez que descendamos.
 
 Ejemplos en **mascota.java**, **perro.java**, **conejo.java** y **mainHerencia.java**
 
-**Polimorfismo** --> Podemos ver al polimorfismo como la sobreescritura de métodos y es que algunos métodos heredados puede que no tengan los mismos comportamientos para todas las clases por lo que es posible modificar ese método de acuerdo a las necesidades particulaes de cada clase. Recomendado utilizar @Override encima de cada método sobreescrito.
+**Polimorfismo**
+Podemos ver al polimorfismo como la sobreescritura de métodos y es que algunos métodos heredados puede que no tengan los mismos comportamientos para todas las clases por lo que es posible modificar ese método de acuerdo a las necesidades particulaes de cada clase. Recomendado utilizar @Override encima de cada método sobreescrito.
 
-**Clases abstractas** --> No se puede instanciar, posee al menos un método abstracto. La clase define lo que es y qué hace pero no lo detalla ni dice cómo, eso lo harán las clases hijas que deben implementar todos sus métodos abstractos y sobreescribirlos. Palabra reservada = abstract.
+**Clases abstractas**
+No se puede instanciar, posee al menos un método abstracto. La clase define lo que es y qué hace pero no lo detalla ni dice cómo, eso lo harán las clases hijas que deben implementar todos sus métodos abstractos y sobreescribirlos. Palabra reservada = abstract.
 
-**Principio de sustitución** --> Una clase hija puede ser tratada como una clase padre. Se puede necesitar un arreglo que contenga diferentes objetos; dado que hacer un arreglo para cada objeto es poco recomendado se podría utilizar el principio de sustitución (si todos los objetos son hijos del mismo padre) reemplazando solo en la parte izquierda de la declaración e instanciación del objeto el tipo del objeto actual por el de su padre sin dejar de instanciar al objeto actual en la derecha. 
+**Principio de sustitución**
+Una clase hija puede ser tratada como una clase padre. Se puede necesitar un arreglo que contenga diferentes objetos; dado que hacer un arreglo para cada objeto es poco recomendado se podría utilizar el principio de sustitución (si todos los objetos son hijos del mismo padre) reemplazando solo en la parte izquierda de la declaración e instanciación del objeto el tipo del objeto actual por el de su padre sin dejar de instanciar al objeto actual en la derecha. 
+
+**Interfaces**

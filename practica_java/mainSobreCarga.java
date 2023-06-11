@@ -1,8 +1,8 @@
 public class mainSobreCarga {
     public static void main(String[] args) {
-
-
+        //instancio sobreCargaOpera
         sobreCargaOpera ejemplo = new sobreCargaOpera();
+        //Almaceno resultado en variable e imprimo
         int resultado1 = ejemplo.suma(2, 3);
         System.out.println("El resultado de la suma es: " + resultado1);
 
