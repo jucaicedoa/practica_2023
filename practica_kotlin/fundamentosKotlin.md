@@ -18,3 +18,7 @@ Ejemplos en **variables.kt**
 ## FUNCIONES
 
 Ejemplos en **funciones.kt**
+
+## IF/ELSE - WHEN
+
+Ejemplos en **ifElse.kt** y **when.kt**
