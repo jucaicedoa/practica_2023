@@ -4,14 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#1B1F42"
     tools:context=".apps.app1.App1Activity">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="65dp"
+        android:layout_marginTop="80dp"
         android:text="Escribe tu nombre"
-        android:textColor="@color/black"
+        android:textColor="#F0FC72"
         android:textSize="36sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -21,26 +22,25 @@
     <androidx.appcompat.widget.AppCompatEditText
         android:id="@+id/espacioNombre"
         android:layout_width="300dp"
-        android:layout_height="wrap_content"
+        android:layout_height="30dp"
         android:layout_marginBottom="32dp"
+        android:background="#3A415B"
         android:maxLines="1"
         android:singleLine="true"
         app:layout_constraintBottom_toTopOf="@+id/btnInicio"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
-
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnInicio"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@color/purple_200"
-        android:text="Púlsame"
+        android:background="#C6A868"
+        android:text="Ingreso"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 

@@ -3,7 +3,7 @@ package com.jucaicedoa.appsbasicas1.apps
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
+import androidx.appcompat.widget.AppCompatButton
 import com.jucaicedoa.appsbasicas1.R
 import com.jucaicedoa.appsbasicas1.apps.app1.App1Activity
 
@@ -12,8 +12,8 @@ class PantallaInicialActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_pantalla_inicial)
         //Botón y evento  app1
-        val BtnApp1 = findViewById<Button>(R.id.BtnApp1)
-        val BtnApp2 = findViewById<Button>(R.id.BtnApp2)
+        val BtnApp1 = findViewById<AppCompatButton>(R.id.BtnApp1)
+        val BtnApp2 = findViewById<AppCompatButton>(R.id.BtnApp2)
         BtnApp1.setOnClickListener { funcionaBoton1() }
         BtnApp2.setOnClickListener{ funcionaBoton2()}
     }

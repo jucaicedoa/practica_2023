@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#1B1F42"
     tools:context=".apps.app1.Resultado1Activity">
 
     <TextView
@@ -10,7 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:textColor="@color/teal_200"
+        android:textColor="#F0FC72"
         android:textSize="35sp"
         tools:text="Esto es un ejemplo" />
 
