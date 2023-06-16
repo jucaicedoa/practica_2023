@@ -13,7 +13,13 @@ class PantallaInicialActivity : AppCompatActivity() {
         setContentView(R.layout.activity_pantalla_inicial)
         //Botón y evento  app1
         val BtnApp1 = findViewById<Button>(R.id.BtnApp1)
+        val BtnApp2 = findViewById<Button>(R.id.BtnApp2)
         BtnApp1.setOnClickListener { funcionaBoton1() }
+        BtnApp2.setOnClickListener{ funcionaBoton2()}
+    }
+
+    private fun funcionaBoton2() {
+
     }
 
     private fun funcionaBoton1(){

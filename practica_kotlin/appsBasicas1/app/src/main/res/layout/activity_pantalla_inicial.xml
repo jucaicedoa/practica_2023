@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_margin="16dp"
+    android:orientation="vertical"
     tools:context=".apps.PantallaInicialActivity">
 
     <Button
@@ -14,4 +15,15 @@
         android:text="Primera App"
 
         />
+
+    <Button
+        android:id="@+id/BtnApp2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Segunda App"
+
+        />
+
+
+
 </androidx.appcompat.widget.LinearLayoutCompat>
