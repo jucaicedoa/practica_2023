@@ -9,4 +9,5 @@ class App2Activity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_app2)
     }
+
 }

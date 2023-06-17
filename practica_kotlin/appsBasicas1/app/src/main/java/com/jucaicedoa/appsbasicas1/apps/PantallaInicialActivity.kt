@@ -6,6 +6,7 @@ import android.os.Bundle
 import androidx.appcompat.widget.AppCompatButton
 import com.jucaicedoa.appsbasicas1.R
 import com.jucaicedoa.appsbasicas1.apps.app1.App1Activity
+import com.jucaicedoa.appsbasicas1.apps.app2.App2Activity
 
 class PantallaInicialActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -15,14 +16,15 @@ class PantallaInicialActivity : AppCompatActivity() {
         val BtnApp1 = findViewById<AppCompatButton>(R.id.BtnApp1)
         val BtnApp2 = findViewById<AppCompatButton>(R.id.BtnApp2)
         BtnApp1.setOnClickListener { funcionaBoton1() }
-        BtnApp2.setOnClickListener{ funcionaBoton2()}
+        BtnApp2.setOnClickListener { funcionaBoton2() }
     }
 
     private fun funcionaBoton2() {
-
+        val intent = Intent(this, App2Activity::class.java)
+        startActivity(intent)
     }
 
-    private fun funcionaBoton1(){
+    private fun funcionaBoton1() {
         val intent = Intent(this, App1Activity::class.java)
         startActivity(intent)
     }

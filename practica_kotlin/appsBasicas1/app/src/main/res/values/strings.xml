@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">appsBasicas1</string>
+    <string name="hombre">Hombre</string>
+    <string name="mujer">Mujer</string>
 </resources>
