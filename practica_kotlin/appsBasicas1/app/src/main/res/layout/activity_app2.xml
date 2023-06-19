@@ -91,8 +91,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="31dp"
         app:cardBackgroundColor="@color/Componente"
-        app:layout_constraintEnd_toEndOf="parent"
         app:cardCornerRadius="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/vistaMujer">
 
@@ -125,8 +125,7 @@
                 android:layout_height="wrap_content"
                 android:stepSize="1"
                 android:valueFrom="120"
-                android:valueTo="200"
-                />
+                android:valueTo="200" />
 
         </androidx.appcompat.widget.LinearLayoutCompat>
 
@@ -137,13 +136,64 @@
         android:layout_width="0dp"
         android:layout_height="150dp"
         android:layout_marginTop="32dp"
-        app:layout_constraintTop_toBottomOf="@+id/vistaAltura"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/vistaEdad"
         android:layout_marginEnd="16dp"
         app:cardBackgroundColor="@color/Componente"
         app:cardCornerRadius="16dp"
-        >
+        app:layout_constraintEnd_toStartOf="@+id/vistaEdad"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vistaAltura">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/peso"
+                android:textAllCaps="true"
+                android:textColor="@color/letra" />
+
+            <TextView
+                android:id="@+id/tvPeso"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                tools:text="50" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/botonRestaPeso"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="15dp"
+                    android:src="@drawable/iconresta"
+                    app:backgroundTint="@color/botones"
+                    app:tint="@color/white">
+
+                </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/botonSumaPeso"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/iconsuma"
+                    app:backgroundTint="@color/botones"
+                    app:tint="@color/white"></com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        </LinearLayout>
 
     </androidx.cardview.widget.CardView>
 
@@ -152,14 +202,89 @@
         android:layout_width="0dp"
         android:layout_height="150dp"
         android:layout_marginTop="32dp"
-        app:layout_constraintTop_toBottomOf="@+id/vistaAltura"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/vistaPeso"
         app:cardBackgroundColor="@color/Componente"
         app:cardCornerRadius="16dp"
-        >
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/vistaPeso"
+        app:layout_constraintTop_toBottomOf="@+id/vistaAltura">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/edad"
+                android:textAllCaps="true"
+                android:textColor="@color/letra">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/tvEdad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                tools:text="25">
+
+            </TextView>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/botonRestaEdad"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="15dp"
+                    android:src="@drawable/iconresta"
+                    app:backgroundTint="@color/botones"
+                    app:tint="@color/white">
+
+                </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/botonSumaEdad"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/iconsuma"
+                    app:backgroundTint="@color/botones"
+                    app:tint="@color/white">
+
+                </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        </LinearLayout>
+
 
     </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/botonCalcular"
+        android:backgroundTint="@color/Componente"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:text="@string/calcular"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+    </Button>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

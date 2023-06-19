@@ -3,4 +3,7 @@
     <string name="hombre">Hombre</string>
     <string name="mujer">Mujer</string>
     <string name="altura">Altura</string>
+    <string name="peso">Peso</string>
+    <string name="edad">Edad</string>
+    <string name="calcular">Calcular</string>
 </resources>
