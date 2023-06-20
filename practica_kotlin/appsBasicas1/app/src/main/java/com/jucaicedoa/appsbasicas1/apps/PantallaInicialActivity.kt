@@ -7,16 +7,24 @@ import androidx.appcompat.widget.AppCompatButton
 import com.jucaicedoa.appsbasicas1.R
 import com.jucaicedoa.appsbasicas1.apps.app1.App1Activity
 import com.jucaicedoa.appsbasicas1.apps.app2.App2Activity
+import com.jucaicedoa.appsbasicas1.apps.app3.App3Activity
 
 class PantallaInicialActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_pantalla_inicial)
-        //Botón y evento  app1 y app2
+        //Botón y evento  app1, app2, app3
         val BtnApp1 = findViewById<AppCompatButton>(R.id.BtnApp1)
         val BtnApp2 = findViewById<AppCompatButton>(R.id.BtnApp2)
+        val BtnApp3 = findViewById<AppCompatButton>(R.id.BtnApp3)
         BtnApp1.setOnClickListener { funcionaBoton1() }
         BtnApp2.setOnClickListener { funcionaBoton2() }
+        BtnApp3.setOnClickListener { funcionaBoton3() }
+    }
+
+    private fun funcionaBoton3() {
+        val intent = Intent(this, App3Activity::class.java)
+        startActivity(intent)
     }
 
     //Intent hacia Activity App2
