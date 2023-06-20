@@ -6,4 +6,21 @@
     <string name="peso">Peso</string>
     <string name="edad">Edad</string>
     <string name="calcular">Calcular</string>
+    <string name="resultado">Tu resultado</string>
+    <string name="reCalcular">Recalcular</string>
+    <string name="regresar">Regresar</string>
+    <string name="error">Error</string>
+
+    <string name="tituloBajoPeso">Bajo peso</string>
+    <string name="detalleBajoPeso">Estás por debajo de lo adeacuado para tu peso y altura</string>
+
+    <string name="titulonormalPeso">Normal</string>
+    <string name="detalleNormalPeso">Estás en lo adeacuado para tu peso y altura</string>
+
+    <string name="tituloSobrePeso">Sobre peso</string>
+    <string name="detalleSobrePeso">Estás por encima de lo adeacuado para tu peso y altura</string>
+
+    <string name="tituloObesidad">Obesidad</string>
+    <string name="detallObesidad">Estás muy por encima de lo adeacuado para tu peso y altura</string>
+
 </resources>

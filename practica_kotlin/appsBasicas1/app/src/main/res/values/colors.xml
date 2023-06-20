@@ -13,4 +13,8 @@
     <color name="botones">#C8A968</color>
     <color name="seleccionComponente">#232F47</color>
     <color name="Componente">#2D3853</color>
+    <color name="bajoPeso">#FFEB3B</color>
+    <color name="pesoNormal">#61B52F</color>
+    <color name="sobrePeso">#FF5722</color>
+    <color name="obesidad">#B81414</color>
 </resources>

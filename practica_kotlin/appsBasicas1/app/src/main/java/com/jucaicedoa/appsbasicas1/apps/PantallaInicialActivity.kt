@@ -12,22 +12,23 @@ class PantallaInicialActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_pantalla_inicial)
-        //Botón y evento  app1
+        //Botón y evento  app1 y app2
         val BtnApp1 = findViewById<AppCompatButton>(R.id.BtnApp1)
         val BtnApp2 = findViewById<AppCompatButton>(R.id.BtnApp2)
         BtnApp1.setOnClickListener { funcionaBoton1() }
         BtnApp2.setOnClickListener { funcionaBoton2() }
     }
 
+    //Intent hacia Activity App2
     private fun funcionaBoton2() {
         val intent = Intent(this, App2Activity::class.java)
         startActivity(intent)
     }
 
+    //Intent hacia Activity App1
     private fun funcionaBoton1() {
         val intent = Intent(this, App1Activity::class.java)
         startActivity(intent)
     }
-
 
 }

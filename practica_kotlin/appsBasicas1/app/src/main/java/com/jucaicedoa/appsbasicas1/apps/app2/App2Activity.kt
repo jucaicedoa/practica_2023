@@ -1,5 +1,6 @@
 package com.jucaicedoa.appsbasicas1.apps.app2
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -21,15 +22,21 @@ class App2Activity : AppCompatActivity() {
     private var estaSeleccMujer: Boolean = false
     private lateinit var vistaHombre: CardView
     private lateinit var vistaMujer: CardView
-    private lateinit var textoAltura: TextView
     private lateinit var tvPeso: TextView
     private lateinit var tvEdad: TextView
+    private lateinit var textoAltura: TextView
     private lateinit var rsAltura: RangeSlider
+    private lateinit var botonCalcular: Button
+    private lateinit var botonRegreso: Button
     private lateinit var botonRestaPeso: FloatingActionButton
     private lateinit var botonSumaPeso: FloatingActionButton
     private lateinit var botonSumaEdad: FloatingActionButton
     private lateinit var botonRestaEdad: FloatingActionButton
-    private lateinit var botonCalcular: Button
+
+    //Acceder a constante desde otros archivos
+    companion object {
+        const val IMC = "IMC_RESULTADO"
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -52,6 +59,7 @@ class App2Activity : AppCompatActivity() {
         botonSumaEdad = findViewById(R.id.botonSumaEdad)
         tvEdad = findViewById(R.id.tvEdad)
         botonCalcular = findViewById(R.id.botonCalcular)
+        botonRegreso = findViewById(R.id.botonRegreso)
     }
 
     //Iniciar acciones en los componentes
@@ -87,26 +95,36 @@ class App2Activity : AppCompatActivity() {
             setEdad()
         }
         botonCalcular.setOnClickListener {
-            calcularImc()
+            val resultado = calcularImc()
+            navegarResultado(resultado)
         }
-
-
+        botonRegreso.setOnClickListener { onBackPressed() }
     }
+
+    //Intent para activity resultadoApp2
+    private fun navegarResultado(resultado: Double) {
+        val intent = Intent(this, ResultadoApp2Activity::class.java)
+        intent.putExtra(IMC, resultado)
+        startActivity(intent)
+    }
+
     //Calcular imc
-    private fun calcularImc() {
-        val df= DecimalFormat("#.##")
-        val imc = pesoInicial/(alturaInicial.toDouble()/100*alturaInicial.toDouble()/100)
-        val resultado = df.format(imc).toDouble()
-        Log.i("jucaicedoa","El imc es $resultado")
+    private fun calcularImc(): Double {
+        val df = DecimalFormat("#.##")
+        val imc = pesoInicial / (alturaInicial.toDouble() / 100 * alturaInicial.toDouble() / 100)
+        return df.format(imc).toDouble()
     }
+
     //Cambio edad
     private fun setEdad() {
         tvEdad.text = edadInicial.toString()
     }
+
     //Cambio peso
     private fun setPeso() {
         tvPeso.text = pesoInicial.toString()
     }
+
     //Cambiar Color vistas
     private fun setColorVistas() {
         vistaHombre.setCardBackgroundColor(getBackgroundSelecc(estaSeleccHombre))
@@ -118,6 +136,7 @@ class App2Activity : AppCompatActivity() {
         estaSeleccHombre = !estaSeleccHombre
         estaSeleccMujer = !estaSeleccMujer
     }
+
     //Obtener el color para cambiar
     private fun getBackgroundSelecc(estaSelecc: Boolean): Int {
         val referenciaColor = if (estaSelecc) {
@@ -127,11 +146,11 @@ class App2Activity : AppCompatActivity() {
         }
         return ContextCompat.getColor(this, referenciaColor)
     }
+
     //Iniciar interfaz
     private fun iniciUI() {
         setColorVistas()
         setPeso()
         setEdad()
     }
-
 }
