@@ -10,4 +10,13 @@ Temática básica lenguaje y archivos ejemplos.
 
 ## Carpeta practica_kotlin
 
-Temática básica lenguaje, archivos ejemplos y carpeta appsBasicas1 con aplicaciones básicas realizadas.
+Temática básica lenguaje, archivos ejemplos
+
+### carpeta appsBasicas1 
+
+Aplicaciones básicas realizadas.
+
+#### APP1
+|                              Pantalla 1                               |                                Resultado                                |
+|:---------------------------------------------------------------------:|:-----------------------------------------------------------------------:|
+| <img src="https://imgur.com/TmAbdea" style="height: 50%; width:50%;"/> | <img src="https://imgur.com/1t8kjEx" style="height: 50%; width:50%;"/> |
