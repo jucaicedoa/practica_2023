@@ -19,4 +19,4 @@ Aplicaciones básicas realizadas.
 #### APP1
 |                              Pantalla 1                               |                                Resultado                                |
 |:---------------------------------------------------------------------:|:-----------------------------------------------------------------------:|
-| <img src="https://imgur.com/TmAbdea" style="height: 50%; width:50%;"/> | <img src="https://imgur.com/1t8kjEx" style="height: 50%; width:50%;"/> |
+| <img src="https://imgur.com/TmAbdea.png" style="height: 50%; width:50%;"/> | <img src="https://imgur.com/1t8kjEx.png" style="height: 50%; width:50%;"/> |
