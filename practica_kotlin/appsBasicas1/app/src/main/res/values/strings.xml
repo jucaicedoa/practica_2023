@@ -22,5 +22,6 @@
     <!--APP3-->
     <string name="bienvenido">Hola, bienvenido</string>
     <string name="categoria">Categorías</string>
+    <string name="tareas">Tareas</string>
 
 </resources>

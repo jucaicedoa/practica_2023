@@ -13,7 +13,7 @@
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
     </style>
 
-    <style name="Theme.App3" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+    <style name="Theme.App3" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/purple_500</item>
         <item name="colorPrimaryVariant">@color/purple_700</item>
@@ -27,6 +27,11 @@
         <!-- Customize your theme here. -->
     </style>
 
+    <style name="subtitulosApp3">
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/letra</item>
+        <item name="android:layout_marginHorizontal">32dp</item>
+    </style>
 
 
 </resources>
