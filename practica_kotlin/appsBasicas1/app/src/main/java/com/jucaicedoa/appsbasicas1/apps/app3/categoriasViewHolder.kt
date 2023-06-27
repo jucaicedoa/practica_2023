@@ -8,32 +8,49 @@ import androidx.recyclerview.widget.RecyclerView
 import com.jucaicedoa.appsbasicas1.R
 
 class categoriasViewHolder(view: View) : RecyclerView.ViewHolder(view) {
-    private val tvCategoria:TextView =  view.findViewById(R.id.tvNombreCategoria)
-    private val divisor:View = view.findViewById(R.id.divisor)
-    private val cvCategoria:CardView = view.findViewById(R.id.cvCategoria)
-    fun render(taskCategory: taskCategory, estaSeleccionada: (Int) -> Unit){
+    private val tvCategoria: TextView = view.findViewById(R.id.tvNombreCategoria)
+    private val divisor: View = view.findViewById(R.id.divisor)
+    private val cvCategoria: CardView = view.findViewById(R.id.cvCategoria)
+    fun render(taskCategory: taskCategory, estaSeleccionada: (Int) -> Unit) {
 
-        val color = if(taskCategory.estaSeleccionada){
-                R.color.seleccionComponente
+        val color = if (taskCategory.estaSeleccionada) {
+            R.color.seleccionComponente
 
-        }else{
-                R.color.Componente
+        } else {
+            R.color.Componente
         }
-        cvCategoria.setCardBackgroundColor(ContextCompat.getColor(cvCategoria.context,color))
+        cvCategoria.setCardBackgroundColor(ContextCompat.getColor(cvCategoria.context, color))
 
         itemView.setOnClickListener { estaSeleccionada(layoutPosition) }
 
-        when(taskCategory){
+        when (taskCategory) {
             com.jucaicedoa.appsbasicas1.apps.app3.taskCategory.negocios -> {
                 tvCategoria.text = "Negocios"
-                divisor.setBackgroundColor(ContextCompat.getColor(divisor.context, R.color.teal_200))
+                divisor.setBackgroundColor(
+                    ContextCompat.getColor(
+                        divisor.context,
+                        R.color.teal_200
+                    )
+                )
             }
+
             com.jucaicedoa.appsbasicas1.apps.app3.taskCategory.otros -> {
                 tvCategoria.text = "Otros"
-                divisor.setBackgroundColor(ContextCompat.getColor(divisor.context, R.color.teal_700))
+                divisor.setBackgroundColor(
+                    ContextCompat.getColor(
+                        divisor.context,
+                        R.color.teal_700
+                    )
+                )
             }
+
             com.jucaicedoa.appsbasicas1.apps.app3.taskCategory.personal -> {
-                divisor.setBackgroundColor(ContextCompat.getColor(divisor.context, R.color.purple_200))
+                divisor.setBackgroundColor(
+                    ContextCompat.getColor(
+                        divisor.context,
+                        R.color.purple_200
+                    )
+                )
                 tvCategoria.text = "Personal"
             }
         }

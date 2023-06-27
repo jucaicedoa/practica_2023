@@ -14,23 +14,23 @@ class tareasViewHolder(view: View) : RecyclerView.ViewHolder(view) {
     private val cbTarea: CheckBox = view.findViewById(R.id.cbTarea)
     fun render(tarea: tarea) {
 
-        if(tarea.estaSeleccionado){
+        if (tarea.estaSeleccionado) {
             tvTarea.paintFlags = tvTarea.paintFlags or Paint.STRIKE_THRU_TEXT_FLAG
-        }else{
+        } else {
             tvTarea.paintFlags = tvTarea.paintFlags and Paint.STRIKE_THRU_TEXT_FLAG.inv()
         }
 
         tvTarea.text = tarea.name
         cbTarea.isChecked = tarea.estaSeleccionado
 
-        val color = when(tarea.categoria){
+        val color = when (tarea.categoria) {
             taskCategory.negocios -> R.color.teal_200
-            taskCategory.otros ->R.color.teal_700
+            taskCategory.otros -> R.color.teal_700
             taskCategory.personal -> R.color.purple_200
         }
 
         cbTarea.buttonTintList = ColorStateList.valueOf(
-            ContextCompat.getColor(cbTarea.context,color)
+            ContextCompat.getColor(cbTarea.context, color)
         )
 
 

@@ -47,7 +47,7 @@ class App3Activity : AppCompatActivity() {
 
     //Iniciar UI
     private fun iniciarUI() {
-        adaptadorCategoriaz = adaptadorCategoriaz(categorias){actualizarCategorias(it)}
+        adaptadorCategoriaz = adaptadorCategoriaz(categorias) { actualizarCategorias(it) }
         rvCategoria.layoutManager = LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
         rvCategoria.adapter = adaptadorCategoriaz
 
@@ -57,10 +57,10 @@ class App3Activity : AppCompatActivity() {
         rvTareas.adapter = adaptadorTareas
     }
 
-    private fun actualizarCategorias(position: Int){
-            categorias[position].estaSeleccionada = !categorias[position].estaSeleccionada
-            adaptadorCategoriaz.notifyItemChanged(position)
-            actualizarTareas()
+    private fun actualizarCategorias(position: Int) {
+        categorias[position].estaSeleccionada = !categorias[position].estaSeleccionada
+        adaptadorCategoriaz.notifyItemChanged(position)
+        actualizarTareas()
     }
 
     //Iniciar listeners

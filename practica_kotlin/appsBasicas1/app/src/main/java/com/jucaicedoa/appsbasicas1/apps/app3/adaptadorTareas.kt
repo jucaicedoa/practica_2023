@@ -5,7 +5,8 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.jucaicedoa.appsbasicas1.R
 
-class adaptadorTareas( var tarea: List<tarea>, private  val tareaSeleccionada:(Int) ->Unit) : RecyclerView.Adapter<tareasViewHolder>() {
+class adaptadorTareas(var tarea: List<tarea>, private val tareaSeleccionada: (Int) -> Unit) :
+    RecyclerView.Adapter<tareasViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): tareasViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.item_task, parent, false)
         return tareasViewHolder(view)

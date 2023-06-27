@@ -11,46 +11,39 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/white"
+        android:hint="@string/ingresoTarea"
         android:textColor="@color/white"
-        android:textColorHint="@color/white"
-        android:hint="@string/ingresoTarea">
-    </EditText>
+        android:textColorHint="@color/white"></EditText>
 
     <RadioGroup
         android:id="@+id/rgCategorias"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-    <RadioButton
-        android:id="@+id/rbNegocios"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/negocios"
-        android:textColor="@color/white"
-        android:checked="true"
-        android:buttonTint="@color/teal_200"
-        >
-    </RadioButton>
+        <RadioButton
+            android:id="@+id/rbNegocios"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/teal_200"
+            android:checked="true"
+            android:text="@string/negocios"
+            android:textColor="@color/white"></RadioButton>
 
         <RadioButton
             android:id="@+id/rbpersonal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/personal"
-            android:textColor="@color/white"
             android:buttonTint="@color/purple_200"
-            >
-        </RadioButton>
+            android:text="@string/personal"
+            android:textColor="@color/white"></RadioButton>
 
         <RadioButton
             android:id="@+id/rbotros"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/otros"
-            android:textColor="@color/white"
             android:buttonTint="@color/teal_700"
-            >
-        </RadioButton>
+            android:text="@string/otros"
+            android:textColor="@color/white"></RadioButton>
 
 
     </RadioGroup>
