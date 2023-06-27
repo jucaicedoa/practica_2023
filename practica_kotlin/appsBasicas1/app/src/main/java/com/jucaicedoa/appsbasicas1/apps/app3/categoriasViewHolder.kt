@@ -2,6 +2,7 @@ package com.jucaicedoa.appsbasicas1.apps.app3
 
 import android.view.View
 import android.widget.TextView
+import androidx.cardview.widget.CardView
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
 import com.jucaicedoa.appsbasicas1.R
@@ -9,7 +10,19 @@ import com.jucaicedoa.appsbasicas1.R
 class categoriasViewHolder(view: View) : RecyclerView.ViewHolder(view) {
     private val tvCategoria:TextView =  view.findViewById(R.id.tvNombreCategoria)
     private val divisor:View = view.findViewById(R.id.divisor)
-    fun render(taskCategory: taskCategory){
+    private val cvCategoria:CardView = view.findViewById(R.id.cvCategoria)
+    fun render(taskCategory: taskCategory, estaSeleccionada: (Int) -> Unit){
+
+        val color = if(taskCategory.estaSeleccionada){
+                R.color.seleccionComponente
+
+        }else{
+                R.color.Componente
+        }
+        cvCategoria.setCardBackgroundColor(ContextCompat.getColor(cvCategoria.context,color))
+
+        itemView.setOnClickListener { estaSeleccionada(layoutPosition) }
+
         when(taskCategory){
             com.jucaicedoa.appsbasicas1.apps.app3.taskCategory.negocios -> {
                 tvCategoria.text = "Negocios"

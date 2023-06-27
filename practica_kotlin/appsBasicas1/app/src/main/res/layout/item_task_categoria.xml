@@ -7,7 +7,8 @@
     android:layout_marginHorizontal="8dp"
     android:layout_marginVertical="16dp"
     app:cardBackgroundColor="@color/Componente"
-    app:cardCornerRadius="16dp">
+    app:cardCornerRadius="16dp"
+    android:id="@+id/cvCategoria">
 
     <LinearLayout
         android:layout_width="match_parent"

@@ -23,5 +23,8 @@
     <string name="bienvenido">Hola, bienvenido</string>
     <string name="categoria">Categorías</string>
     <string name="tareas">Tareas</string>
-
+    <string name="ingresoTarea">Agregue la tarea</string>
+    <string name="negocios">Negocios</string>
+    <string name="personal">Personal</string>
+    <string name="otros">Otros</string>
 </resources>

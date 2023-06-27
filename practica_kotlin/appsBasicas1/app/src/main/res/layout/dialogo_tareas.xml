@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    android:background="@color/fondoGeneral"
+    android:orientation="vertical"
+    android:padding="14dp">
+
+    <EditText
+        android:id="@+id/etTarea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:hint="@string/ingresoTarea">
+    </EditText>
+
+    <RadioGroup
+        android:id="@+id/rgCategorias"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <RadioButton
+        android:id="@+id/rbNegocios"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/negocios"
+        android:textColor="@color/white"
+        android:checked="true"
+        android:buttonTint="@color/teal_200"
+        >
+    </RadioButton>
+
+        <RadioButton
+            android:id="@+id/rbpersonal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/personal"
+            android:textColor="@color/white"
+            android:buttonTint="@color/purple_200"
+            >
+        </RadioButton>
+
+        <RadioButton
+            android:id="@+id/rbotros"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/otros"
+            android:textColor="@color/white"
+            android:buttonTint="@color/teal_700"
+            >
+        </RadioButton>
+
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnAgregarTareas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/botones"
+        android:text="AGREGAR"
+        android:textStyle="bold">
+
+    </Button>
+
+
+</LinearLayout>

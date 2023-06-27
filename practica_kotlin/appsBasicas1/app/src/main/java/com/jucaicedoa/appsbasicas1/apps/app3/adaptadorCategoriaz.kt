@@ -5,7 +5,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.jucaicedoa.appsbasicas1.R
 
-class adaptadorCategoriaz(private val categorias: List<taskCategory>) :
+class adaptadorCategoriaz(private val categorias: List<taskCategory>, private val estaSeleccionada:(Int)->Unit) :
     RecyclerView.Adapter<categoriasViewHolder>() {
     //Crea una lista para
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): categoriasViewHolder {
@@ -19,7 +19,7 @@ class adaptadorCategoriaz(private val categorias: List<taskCategory>) :
 
     //Acceder a valores
     override fun onBindViewHolder(holder: categoriasViewHolder, position: Int) {
-        holder.render(categorias[position])
+        holder.render(categorias[position],estaSeleccionada)
     }
 
 }
