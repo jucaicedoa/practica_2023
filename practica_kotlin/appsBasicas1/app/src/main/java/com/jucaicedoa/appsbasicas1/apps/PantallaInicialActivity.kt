@@ -8,6 +8,7 @@ import com.jucaicedoa.appsbasicas1.R
 import com.jucaicedoa.appsbasicas1.apps.app1.App1Activity
 import com.jucaicedoa.appsbasicas1.apps.app2.App2Activity
 import com.jucaicedoa.appsbasicas1.apps.app3.App3Activity
+import com.jucaicedoa.appsbasicas1.apps.app4.App4ListadoActivity
 
 class PantallaInicialActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -17,9 +18,16 @@ class PantallaInicialActivity : AppCompatActivity() {
         val BtnApp1 = findViewById<AppCompatButton>(R.id.BtnApp1)
         val BtnApp2 = findViewById<AppCompatButton>(R.id.BtnApp2)
         val BtnApp3 = findViewById<AppCompatButton>(R.id.BtnApp3)
+        val BtnApp4 = findViewById<AppCompatButton>(R.id.BtnApp4)
         BtnApp1.setOnClickListener { funcionaBoton1() }
         BtnApp2.setOnClickListener { funcionaBoton2() }
         BtnApp3.setOnClickListener { funcionaBoton3() }
+        BtnApp4.setOnClickListener { funcionaBoton4() }
+    }
+
+    private fun funcionaBoton4() {
+        val intent = Intent(this,App4ListadoActivity::class.java)
+        startActivity(intent)
     }
 
     private fun funcionaBoton3() {
