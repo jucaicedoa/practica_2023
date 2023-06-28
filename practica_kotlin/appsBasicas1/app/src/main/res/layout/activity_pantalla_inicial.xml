@@ -37,6 +37,17 @@
         android:background="#C6A868"
         android:text="Tercera app"
         android:textStyle="bold"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/BtnApp4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="18dp"
+        android:layout_marginVertical="10dp"
+        android:background="#C6A868"
+        android:text="Cuarta APP"
+        android:textStyle="bold"
 
         />
 </androidx.appcompat.widget.LinearLayoutCompat>
