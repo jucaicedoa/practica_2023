@@ -8,6 +8,10 @@ Agrego temática lenguajes y proyectos de práctica del año 2023.
 
 Temática básica lenguaje y archivos ejemplos. 
 
+### carpeta EjerciciosJava
+
+Agrego ejercicios desarrollados libro de Leonardo Bermón Angarita: http://www.fadmon.unal.edu.co/fileadmin/user_upload/investigacion/centro_editorial/libros/ejercicios%20de%20programacion.pdf 
+
 ## Carpeta practica_kotlin
 
 Temática básica lenguaje, archivos ejemplos
